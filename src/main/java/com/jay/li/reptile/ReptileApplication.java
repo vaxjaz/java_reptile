@@ -37,7 +37,7 @@ public class ReptileApplication {
             log.error("查询百度编码失败 e={}", e.getMessage());
         }
         GeccoEngine.create()
-                .classpath("com.ne.ice.resource.cpsp.client")
+                .classpath("com.jay.li.reptile.service")
                 .start("https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&rsv_dl=ns_pc&word=" + encodeKeyword)
                 .thread(2)
                 .interval(1000)
